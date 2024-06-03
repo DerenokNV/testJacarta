@@ -10,10 +10,48 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jakartaee>10.0.0</jakartaee>
+        <jersey.client.version>2.25.1</jersey.client.version>
+  	<jersey.container.servlet>2.25.1</jersey.container.servlet>
+  	<jersey.media.json.jackson>2.25.1</jersey.media.json.jackson>
+  	<jersey.media.jaxb>2.25.1</jersey.media.jaxb>
     </properties>
     
     <dependencies>
-      <dependency>
+      <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+	<dependency>
+	    <groupId>org.glassfish.jersey.core</groupId>
+	    <artifactId>jersey-client</artifactId>
+	    <version>${jersey.client.version}</version>
+	    
+	    <!-- 
+	    	<version>2.25.1</version>
+	    -->
+	    
+	</dependency>
+  	
+  	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-servlet -->
+	<dependency>
+	    <groupId>org.glassfish.jersey.containers</groupId>
+	    <artifactId>jersey-container-servlet</artifactId>
+	    <version>${jersey.container.servlet}</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson -->
+	<dependency>
+	    <groupId>org.glassfish.jersey.media</groupId>
+	    <artifactId>jersey-media-json-jackson</artifactId>
+	    <version>${jersey.media.json.jackson}</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-jaxb -->
+	<dependency>
+	    <groupId>org.glassfish.jersey.media</groupId>
+	    <artifactId>jersey-media-jaxb</artifactId>
+	    <version>${jersey.media.jaxb}</version>
+	</dependency>  
+        
+        
+      <!--dependency>
         <groupId>jakarta.platform</groupId>
         <artifactId>jakarta.jakartaee-api</artifactId>
         <version>${jakartaee}</version>
@@ -82,7 +120,7 @@
         <groupId>org.glassfish.hk2</groupId>
         <artifactId>hk2-api</artifactId>
         <version>3.1.0</version>
-      </dependency>
+      </dependency-->
   
     </dependencies>
     

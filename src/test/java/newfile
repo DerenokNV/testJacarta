@@ -1,3 +1,5 @@
+org.glassfish.jersey
+
 
 <!-- Jersey. Для REST-сервисов -->
     <dependency org="javax.inject" name="javax.inject" rev="1" transitive="false"/>

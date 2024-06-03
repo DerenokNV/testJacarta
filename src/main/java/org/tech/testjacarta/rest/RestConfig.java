@@ -1,6 +1,6 @@
 package org.tech.testjacarta.rest;
 
-import jakarta.ws.rs.ApplicationPath;
+//import jakarta.ws.rs.ApplicationPath;
 import org.glassfish.jersey.message.GZipEncoder;
 import org.glassfish.jersey.message.filtering.EntityFilteringFeature;
 import org.glassfish.jersey.server.ResourceConfig;
