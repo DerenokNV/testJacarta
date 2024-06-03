@@ -1,0 +1,36 @@
+
+<!-- Jersey. Для REST-сервисов -->
+    <dependency org="javax.inject" name="javax.inject" rev="1" transitive="false"/>
+    <dependency org="javax.ws.rs" name="javax.ws.rs-api" rev="2.+" transitive="false"/>
+    <dependency org="javax.validation" name="validation-api" rev="2.0.1.Final" transitive="false"/>
+    <dependency org="org.glassfish.jersey.containers" name="jersey-container-servlet" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.jersey.containers" name="jersey-container-servlet-core" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.jersey.core" name="jersey-server" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.jersey.core" name="jersey-client" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.jersey.core" name="jersey-common" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.jersey.inject" name="jersey-hk2" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.jersey.ext" name="jersey-entity-filtering" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.jersey.media" name="jersey-media-multipart" rev="(,2.36]" transitive="false"/>
+    <dependency org="org.glassfish.hk2" name="hk2-api" rev="(,3[" transitive="false"/>
+    <dependency org="org.glassfish.hk2" name="hk2-locator" rev="(,3[" transitive="false"/>
+    <dependency org="org.glassfish.hk2" name="hk2-utils" rev="(,3[" transitive="false"/>
+    <!-- Для DI в Jersey -->
+    <dependency org="org.javassist" name="javassist" rev="(,4[" transitive="false"/>
+    <!-- gson -->
+    <dependency org="com.google.code.gson" name="gson" rev="latest.release" transitive="false"/>
+<!--    <dependency org="commons-logging" name="commons-logging" rev="1.2+" transitive="false"/> -->
+
+
+<servlet>
+    <servlet-name>JerseySerlvet</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+      <param-value>org.XXX.webservice.rest.RestConfig</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JerseySerlvet</servlet-name>
+    <url-pattern>/api/*</url-pattern>
+  </servlet-mapping>
