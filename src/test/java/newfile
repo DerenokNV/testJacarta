@@ -194,4 +194,72 @@ org.glassfish.jersey
                                                                                                                                                                                                                                                                                                      
     </dependencies>
 
+---111111111111111111111
+<dependency>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
+        <version>6.0.0</version>   
+        <scope>provided</scope>    
+    </dependency>
+    <dependency>
+        <groupId>jakarta.servlet.jsp</groupId>
+        <artifactId>jakarta.servlet.jsp-api</artifactId>
+        <version>3.1.0</version> 
+        <scope>provided</scope>      
+    </dependency>
+    <dependency>
+        <groupId>jakarta.el</groupId>
+        <artifactId>jakarta.el-api</artifactId>
+        <version>5.0.0</version> 
+        <scope>provided</scope>       
+    </dependency>
+    <dependency>
+        <groupId>jakarta.websocket</groupId>
+        <artifactId>jakarta.websocket-api</artifactId>
+        <version>2.1.0</version>  
+        <scope>provided</scope>      
+    </dependency>
+    <dependency>
+        <groupId>jakarta.security.enterprise</groupId>
+        <artifactId>jakarta.security.enterprise-api</artifactId>
+        <version>3.0.0</version>   
+        <scope>provided</scope>     
+    </dependency>
+
+
+    
+    <!--dependency>
+      <groupId>org.glassfish</groupId>
+      <artifactId>jakarta.faces</artifactId>
+      <version>4.0.0</version>
+    </dependency--> 
+    <dependency>
+      <groupId>org.apache.myfaces.core</groupId>
+      <artifactId>myfaces-api</artifactId>
+      <version>4.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.myfaces.core</groupId>
+      <artifactId>myfaces-impl</artifactId>
+      <version>4.0.2</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>jakarta.servlet.jsp.jstl</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+      <version>3.0.0</version>
+    </dependency>   
+    
+    <dependency>
+      <groupId>org.jboss.weld.servlet</groupId>
+      <artifactId>weld-servlet-shaded</artifactId>
+      <version>5.1.0.Final</version>
+    </dependency> 
+!!!!
+https://stackoverflow.com/questions/65703840/how-to-properly-configure-jakarta-ee-libraries-in-maven-pom-xml-for-tomcat
+https://stackoverflow.com/questions/8081234/how-to-properly-install-and-configure-jsf-libraries-via-maven/8081384#8081384
+https://stackoverflow.com/questions/18995951/how-to-install-and-use-cdi-on-tomcat/19003725#19003725
+
+
+
 
